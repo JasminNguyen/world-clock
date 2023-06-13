@@ -33,14 +33,14 @@ select {
   font-size: 17px;
 }
 
-.cities {
+.city {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
   border-bottom: 1px dashed grey;
 }
 
-.cities:last-child {
+.city:last-child {
   border: none;
 }
 
