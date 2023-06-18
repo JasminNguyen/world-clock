@@ -25,11 +25,14 @@ function updateParisTime() {
 setInterval(updateParisTime, 1000);
 
 function updateCity(event) {
-  let displayedCityElement = document.querySelector("#cities");
   let timeZone = event.target.value;
+  if (timeZone === "current") {
+    timeZone = moment.tz.guess();
+  }
   let cityName = timeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(timeZone).format("h:mm:ss [<small>]A<[/small>]");
   let date = moment().tz(timeZone).format("MMMM Do YYYY");
+  let displayedCityElement = document.querySelector("#cities");
   displayedCityElement.innerHTML = `
     <div class="city">
      <div>
