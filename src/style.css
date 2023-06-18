@@ -68,3 +68,7 @@ footer {
   opacity: 0.9;
   font-size: 15px;
 }
+
+a {
+  font-family: sans-serif;
+}

@@ -40,7 +40,8 @@ function updateCity(event) {
     <div class="date">${date}</div>
     </div>
     <div class="time"> ${cityTime}</div>
-    </div>`;
+    </div>
+    <a href="index.html">All cities</a>`;
 }
 
 let citiesSelectElement = document.querySelector("#city");
